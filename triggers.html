@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Triggers Page</title>
+    <link rel="stylesheet" href="tstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="bgimage">
+        <nav class="navbar">
+            <div class="left-heading">
+                <h1>TRIGGERS</h1>
+            </div>
+            <div class="right-link">
+                <a href="cursors.html">CURSORS</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="definition">
+                <p>Triggers are the SQL codes that are automatically executed in response to certain events on a particular table.</p>
+                <p>These are used to maintain the integrity of the data.</p>  
+            </div>
+            <img src="definitionKeSaath.png"  alt="image related to triggers">
+
+            <div class="why-trigger">
+                <p style="font-size: 27px;color:black;font-weight: bold;">Have you ever experienced an auto-mated email with "no-reply" as heading??</p>
+                <p>Well that is because of triggers!!! when you enter a query and want a confirmation in return,
+                   triggers are basically behind this whole mechanism!.  
+                </p>
+                <p>Triggers are set there to provide you a notification the moment you send a query</p>
+            </div>
+
+            <div class="syntax">
+                <h3 style="text-align:center;">SYNTAX</h3>
+                <p>Create Trigger Trigger_Name</p>
+                <p>(Before | After)</p>
+                <p>[Insert | Update | Delete]</p>
+                <p>on [Table_Name]</p>
+                <p>[for each Row | for each Column ]</p>
+                <p>[Trigger_body]</p>
+                <!-- <img src="syntax.png" alt="syntax_Triggers"> -->
+            </div>
+            <div class="syntax-example">
+                <h3 style="text-align: center;">EXAMPLE</h3>
+                <P>CREATE TRIGGER sample_trigger</P>
+                <p>before INSERT</p>
+                <p>ON student</p>
+                <p>FOR EACH ROW</p>
+                <p>SET new.marks = new.marks+6</p>
+            </div>
+            
+            <div class="oprtr_heading">
+                <h1>Operations In triggers</h1>
+            </div>
+            <div class="drop-function">
+                <h3 style="text-align:center;">DROP</h3>
+                <p>we can use DROP command to remove a trigger from the database</p>
+            </div>
+            <div class="drop-example">
+                <h3 style="text-align: center;">SYNTAX</h3>
+                <p>DROP TRIGGER trigger name;</p>
+                <h3 style="text-align: center;">EXAMPLE</h3>
+                <p>DROP TRIGGER calculate name;</p>
+            </div>
+            <div class="display-function">
+                <h3>DISPLAY</h3>
+                <p>we can use SHOW command
+                to display triggers from the database</p>
+            </div>
+            <div class="display-example">
+                <h3>SYNTAX</h3>
+                <p>SHOW TRIGGERS IN database_name;</p>
+                <h3>EXAMPLE</h3>
+                <p>SHOW TRIGGERS IN abc;</p>
+            </div>
+            <div class="insert-function">
+                <h3 style="text-align: center">INSERT</h3>
+                <p>Before Insert Triggers are used to update or validate record values</p>
+                <p>before they are saved to database.</p>
+            </div>
+            <div class="insert-example">
+                <h3 style="text-align: center">SYNTAX</h3>
+            <p>CREATE TRIGGER calculate</p>
+            <p>before INSERT</p>
+            <p>ON student</p>
+            <p>FOR EACH ROW</p>
+            <p>SET new.marks = new.marks+100</p>
+            </div>
+            <div class="advantages"></div>
+            <h1 style="text-align: center; color:white; font-size:60px; font-family: 'Arapey', serif; letter-spacing: 2px; text-shadow:5px 5px 10px black;
+            ">ADVANTAGES</h1>
+        </div>
+            <div class="advantage-content">
+                <!-- <p>* Forcing security approvals on the table.</p>
+                <p>* Triggers check the integrity of data.</p>
+                <p>* Counteracting invalid exchanges.</p>
+                <p>* Triggers handle errors.</p>
+                <p>* Triggers are useful for inspecting the data.</p> -->
+                <img src="advantages.png" alt="advantages">
+            </div>
+            <div class="disadvantage">
+                <h1 >DISADVANTAGES</h1>
+            </div>
+            <div class="dis-content">
+                <img src="disadvantages.png" alt="disadvantages">
+            </div>
+            <div class="example">
+                <h3># Follow here to have an example of <a href="example.html">TRIGGERS</a></h3>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>

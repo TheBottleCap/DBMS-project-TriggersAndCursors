@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-image: url('bgimage8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: hidden;
+}
+
+.what-project{
+    text-align: center;
+    position: relative;
+    margin-top:5%;
+    color: black;
+    background: rgba(255, 255, 255, 0.753);
+    width: 85%;
+    margin-left:140px;
+    padding:20px;  
+    border-radius:15px; 
+    box-shadow:10px 10px 20px black;
+}
+
+.what-project p,h1,h2,h3{
+    padding: 5px;
+
+}
+
+.what-project p{
+    font-size: 20px;
+}
+
+.footer{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 470px;
+    text-align: center;
+    background:  rgba(27, 23, 23, 0.562);
+    width: 50%;
+    height: 140px;
+    border-radius:15px; 
+    box-shadow:10px 10px 15px black;
+}
+
+.footer ul{
+    color: white:
+    display:block;
+}
+
+.footer ul li{
+    color: white;
+    display:inline-flex;
+    padding:40px;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    margin-top:20px;
+    padding: 5px;
+}
+
+.footer ul li a:hover{
+    border: 2px solid white;
+    transition: 0.5s;
+}

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('bgimage8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.texample{
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background: rgba(27, 24, 24, 0.712);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px black;
+    width: 50%;
+    text-align: justify;
+}
+
+.texample h3,p{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.triggerforproblem{
+    background: linear-gradient(to right,lightcoral,lavender);
+    color: black;
+    width: 800px;
+    padding: 2px;
+    border: 4px solid white;
+}
+
+
+.cexample{
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 890px;
+    background: rgba(27, 24, 24, 0.712);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px black;
+    width: 50%;
+    text-align: right;
+}
+
+.cexample img{
+    border: 5px solid white;
+    padding: 3px;
+}
+
+.emptyspace{
+    position: relative;
+    margin-top: 100px;
+    height: 10px;
+    top: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examples </title>
+    <link rel="stylesheet" href="exstyle.css">
+</head>
+<body>
+    <h1 style="color: white; text-align:center; font-size: 50px; text-shadow: 2px 2px 2px black; ">EXAMPLES</h1>
+    <div class="texample">
+        <h1>Related to triggers:</h1>
+        <hr style="margin-top: 10px; margin-bottom: 10px;">
+        <h3 style=" font-size: 20px;font-weight: bold; ">Problem Statement:</h3>
+        <p>Given Student Report Database, in which student marks assessment is recorded.</p> 
+        <p>In such schema, create a trigger so that the total and average of specified marks is automatically inserted whenever a record is insert</pp>
+        <h3>Solution:</h3>
+        <p>Suppose the database Schema –</p>
+        <img src="descstudent.png" alt="student table" style="border: 5px solid white; padding:3px;">
+        <p>SQL Trigger to problem statement:</p>
+        <div class="triggerforproblem">
+            <p>create trigger stud_marks</p> 
+            <p>INSERT</p> 
+            <p>on</p>    
+            <p>Student</p> 
+            <p>for each row</p> 
+            <p>set Student.total = Student.subj1 + Student.subj2 + Student.subj3, Student.per = Student.total * 60 / 100;</p>
+        </div>
+        <div class="output">
+            <p>Above SQL statement will create a trigger in the student database in which whenever subjects marks are entered,</p>
+            <p>before inserting this data into the database, trigger will compute those two values and insert with the entered values. i.e.,</p>
+            <img src="output.png" alt="output of trigger" style="border: 5px solid white; padding:3px;">
+        </div>
+    </div>
+    <div class="cexample">
+        <h1 style="text-align: left; ">Related to Cursors:</h1>
+        <hr style="margin-top: 10px; margin-bottom: 10px;">
+        <h1>Implicit Cursors:</h1>
+        <p>We will be using the CUSTOMERS table-</p>
+        <img src="customertable.png" alt="customer table">
+        <p>The following program will update the table and increase the salary of each customer by 500 </p>
+        <p>and use the SQL%ROWCOUNT attribute to determine the number of rows affected −</p>
+        <img src="cursorfortheproblem.png" alt="cursor for the table">
+        <p>When the above code is executed at the SQL prompt, it produces the following result −</p>
+        <img src="cursorimg2.png" alt="output">
+        <p>If you check the records in customers table, you will find that the rows have been updated −</p>
+        <img src="updatedtable.png" alt="updatedtable">
+        <hr style="margin-top: 10px; margin-bottom: 10px;">
+        <h1>Explicit Cursors</h1>
+        <p>Following is a complete example to illustrate the concepts of explicit cursors &minua;</p>
+        <img src="explicitimage.png" alt="explicitimage">
+        <p>When the above code is executed at the SQL prompt, it produces the following result −</p>
+        <img src="explicitoutput.png" alt="output">
+        
+    </div>
+</body>
+</html>
