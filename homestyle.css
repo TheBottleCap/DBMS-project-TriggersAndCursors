@@ -91,7 +91,7 @@
     float: right;
     text-align: center;
     margin-top: 35px;
-    padding-right: 30%;
+    padding-right: 27%;
     color: black;
     padding-top: 0px;
 }
@@ -249,7 +249,7 @@
 }
 
 .flip-card-back {
-  background-color:rgba(0,0,0.2,0);
+  background-color:black;
   color: white;
   text-align: center;
   transform: rotateY(180deg);
